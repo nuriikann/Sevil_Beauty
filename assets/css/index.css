@@ -1,0 +1,700 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+ 
+  body {
+    line-height: 1.5;
+  }
+
+  img, picture, video, canvas, svg {
+    max-width: 100%;
+  }
+
+  video {
+    border-top-left-radius: 162px;
+    border-bottom-right-radius: 164px;
+  }
+ 
+  input, button, textarea, select {
+    font: inherit;
+  }
+ 
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  main iframe{
+    animation: fadeInUp;
+    animation-duration: 2s;
+  }
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    animation: backInRight;
+    animation-duration: 2s;
+  }
+
+  .float:hover {
+    background-color: #272727;
+    transition: 500ms;
+  }
+  
+  .my-float{
+    margin-top:16px;
+  }
+/*----------------- Header------------ */
+
+.headerContainer {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.headerMain {
+   background-color:white;
+
+   & button {
+        
+        background-color: white;
+        color: #272727 !important;
+        border: none;
+   }
+   & a {
+    color: #272727;
+    text-decoration: none;
+    font-weight: 900;
+   }
+}
+
+.navLinks{
+  padding: 12px 30px;
+  animation: backInRight;
+  animation-duration: 2s;
+}
+
+.navLinks:hover{
+  padding: 12px 30px;
+  transition: 500ms;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.headerMain button:hover {
+  background-color: #272727;
+  transition: 500ms;
+  & a{
+    color: white;
+    border-radius: 0%;
+    transition: 500ms;
+  }
+}
+
+.btn-a {
+    background-color: #272727;
+    color: white !important;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: 500ms;
+}
+
+.btn-b{
+  color: #272727;
+  text-decoration: none;
+}
+
+.header-logo {
+  flex: 1;
+  animation: backInLeft;
+    animation-duration: 2s;
+}
+
+.headerContact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 12px;
+    align-items: center;
+    padding-block: 22px;
+    color: black;
+
+   & button {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: 500ms;
+    animation: backInRight;
+    animation-duration: 2s;
+   }
+}
+
+@media (width <578px) {
+    .headerMain {
+        background-color:white;
+        height: 140px;
+        & button {
+            padding: 12px 30px;
+            background-color: black;
+            color: white;
+            border: none;
+            display: none;
+            
+       }
+       .headerContact {
+       
+        & h4 {
+            display: none;
+        }
+    }
+    }
+
+    .burgerMenu {
+        background: none;
+        border: none;
+        width: 44px;    
+        display: block;    
+    }
+
+    .headerMain {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*--------------- Hero------------*/
+
+@media ( width <1025px ) {
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+}
+
+.hero{
+    border: none;
+    border-color: transparent;
+    justify-content: center;
+    display: flex;
+}
+
+.hero video {
+  padding: 20px;
+  transition: 500ms;
+  animation: backInUp;
+  animation-duration: 1500ms;
+}
+
+.hero video:hover{
+  border-radius: 0% !important;
+  transition: 500ms;
+}
+
+@media (width <578px) {
+
+    .hero{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+    }
+
+    .hero h1{
+        text-align: center;
+    }
+}
+
+/*--------------- Foooter------------ */
+
+.footerContainer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+    animation-delay: 300ms;
+
+    & p {
+        color: white;
+        align-items: center;
+        text-align: center;
+        padding-block: 35px;
+    }
+}
+
+.footerContainer p{
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-Main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 51px;
+    margin: auto;
+    padding-inline: 24px;
+    color: white;
+    & a{
+      color: white;
+      text-decoration: none;
+    }
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    padding-block: 30px;
+}
+
+@media (width < 426px) {
+    .footer-Main {
+        flex-direction: column;
+    }
+
+    .footer-item {
+       display: flex;
+       justify-content:space-around;
+       gap: 5px;
+
+    }
+}
+
+/* -----------Main------------- */
+
+.mainContainer {
+    width: 100%;
+}
+
+.container {
+text-align: center;
+}
+
+.container-text {
+    margin-block: 50px;
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    background-color:gainsboro;
+    color: black;
+    animation: fadeInUp;
+    animation-duration: 2s;
+
+     & span {
+        text-align: justify;
+        padding-block: 50px;
+        padding: 52px;
+        width: 65%;
+     }
+}
+
+.workTime {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    width: 35%;
+    align-items: center;
+    text-align: center;
+    padding-block: 65px;
+    
+    & ul {
+        list-style: none;
+    }
+}
+
+/*-----------------Contact--------------- */
+
+.contactMain {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  animation: fadeInUp;
+  animation-duration: 2s;
+
+  & img {
+      width: 100wv;
+      height: 100%;
+      background-color: aqua;
+      display: block;
+  }
+
+  & span {
+      width: 35%;
+      display: block;
+  }
+}
+
+.contact-work {
+  & a {
+    color: black;
+  }
+}
+
+@media ((width < 768px)) {
+  .contactMain {
+      & img {
+          width: 100wv;
+          height: 100%;
+          background-color: aqua;
+          display: none;
+      }
+  
+      & span {
+          width: 35%;
+          display: none;
+      }
+  }
+}
+
+.all-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 40px;
+    align-items: center;
+    text-align: center;
+}
+    
+.contactitems {
+    background-color: gainsboro;
+    width: 65%;
+    text-align: center;
+    align-items: center;
+    padding-block: 80px; 
+}
+
+@media (width < 768px) {
+    
+    .all-contact {
+       flex-direction: column;
+       gap: 5px;
+    }
+    
+    .contact-work {
+        margin-bottom: 10px;
+    }
+}
+
+/*---------------- Main------------ */
+
+.container {
+    align-items: center;
+    & h1 {
+        margin-block: 42px;
+    }
+}
+
+.main {
+    align-items: center;
+    gap: 15px; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+    & div {
+        width: 364px;
+        height: 300px;
+        text-align: center;
+        padding-block: 8px;
+        margin-block: 41px;
+        gap: 15px;
+
+        & button {
+            width: 100%;
+            border: none;
+            padding-block: 24px;
+            background-color: black;
+            color: white;
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            border-top-left-radius: 50%;
+            transition: 500ms;
+            animation: backInUp;
+            animation-duration: 1500ms;
+            animation-delay: 200ms;
+            
+        }
+        & button{
+          border-bottom-right-radius: 50%;
+          transition: 500ms;
+          animation: backInRight;
+            animation-duration: 1500ms;
+            animation-delay: 200ms;
+        }
+    }
+}
+
+.main img:hover{
+  border-radius: 0%;
+  transition: 500ms;
+}
+
+.main button:hover{
+  border-radius: 0%;
+  transition: 500ms;
+}
+
+@media (width < 768px ) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-2 {
+    align-items: center;
+    gap: 15px;
+    margin-block: 54px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+     & div {
+        width: 364px;
+        height: 300px;
+        text-align: center;
+        padding-block: 8px;
+        margin-block: 41px;
+        gap: 15px;
+
+        & button {
+            width: 100%;
+            border: none;
+            padding-block: 24px;
+            background-color: black;
+            color: white;
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            border-top-left-radius: 50%;
+            transition: 500ms;
+            animation: backInUp;
+            animation-duration: 1500ms;
+            animation-delay: 200ms;
+        }
+        & button{
+          border-bottom-right-radius: 50%;
+          transition: 500ms;
+          animation: backInLeft;
+            animation-duration: 1500ms;
+            animation-delay: 200ms;
+        }
+    }
+}
+
+.main-2 img:hover{
+  border-radius: 0%;
+  transition: 500ms;
+}
+
+.main-2 button:hover{
+  border-radius: 0%;
+  transition: 500ms;
+}
+
+@media (width < 768px ) {
+    .main-2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  #menutoggle {
+    opacity: 0;
+  }
+  #menutoggle:checked + .menubtn > span {
+    transform: rotate(45deg);
+  }
+  #menutoggle:checked + .menubtn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menutoggle:checked + .menubtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menutoggle:checked ~ .menubox {
+    left: 0 !important;
+  }
+  .menubtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+  }
+  .menubtn > span,
+  .menubtn > span::before,
+  .menubtn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #272727;
+    transition-duration: .25s;
+  }
+  .menubtn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menubtn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menubox {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: whitesmoke;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menuitem {
+    display: block;
+    padding: 12px 24px;
+    color: #272727;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menuitem:hover {
+    background-color: #CFD8DC;
+  }
+  
+
+  @media ( width <578px ) {
+    .menubtn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+        display: block;
+      }
+  }
+  .menubox {
+    & h1 {
+        text-align: center;
+    }
+  }
+
+
+.hamburger-menu {
+  z-index: 100;
+}
+
+/* -------Hizmetler-------- */
+
+.container-services {
+  display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-block: 30px;
+
+  & h1 {
+    background-color: black;
+    width: 100%;
+    color: white;
+    animation: slideInLeft;
+    animation-duration: 1500ms;
+  }
+}
+
+.card {
+  border: 2px solid #272727;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 12px;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  animation: fadeIn;
+  animation-duration: 2s;
+  
+ & p {
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  animation: fadeInUp;
+  animation-duration: 2s;
+ }
+
+  & img {
+    width: 500px;
+    height: 350px;
+    border-bottom-left-radius: 50%;
+    animation: fadeInRight;
+    animation-duration: 2s;
+  }
+
+  & h2 {
+    animation: slideInLeft;
+    animation-duration: 1500ms;
+  }
+}
+
+.card img{
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: 500ms;
+}
+
+.card img:hover{
+  border-radius: 0%;
+  transition: 500ms;
+}
+
+.mainPageServices {
+  animation: backInUp;
+  animation-duration: 1500ms;
+  animation-delay: 200ms;
+}
