@@ -197,17 +197,18 @@
 @media ( width < 415px){
   .hero img{
     padding: 10px;
+    height: 60%;
   }
 }
 
 @media ( width < 431px) {
   .hero img{
     padding: 10px;
+    height: 60%;
   }
 }
 
 .hero{
-  
     border: none;
     border-color: transparent;
     justify-content: center;
@@ -235,6 +236,10 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0;
+    }
+    .hero img{
+      padding: 10px;
+      height: 60%;
     }
 
     .hero h1{
