@@ -188,24 +188,42 @@
         background-repeat: no-repeat;
         padding: 0;
     }
+    .hero img{
+      padding: 10px;
+      height: 500px;
+    }
+}
+
+@media ( width < 415px){
+  .hero img{
+    padding: 10px;
+  }
+}
+
+@media ( width < 431px) {
+  .hero img{
+    padding: 10px;
+  }
 }
 
 .hero{
+  
     border: none;
     border-color: transparent;
     justify-content: center;
     display: flex;
 }
 
-.hero video {
-  padding: 20px;
+.hero img{
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
   transition: 500ms;
   animation: backInUp;
   animation-duration: 1500ms;
 }
 
-.hero video:hover{
-  border-radius: 0% !important;
+.hero img:hover{
+  border-radius: 0%;
   transition: 500ms;
 }
 
@@ -222,7 +240,15 @@
     .hero h1{
         text-align: center;
     }
+
 }
+
+@media (width < 391px) {
+ .hero img{
+  padding: 10px;
+ }
+}
+
 
 /*--------------- Foooter------------ */
 
